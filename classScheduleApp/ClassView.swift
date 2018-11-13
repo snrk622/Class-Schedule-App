@@ -13,6 +13,9 @@ class ClassView: UIView {
     @IBOutlet private weak var teacherNameLabel: UILabel!
     @IBOutlet private weak var roomNameLabel: UILabel!
     
+    var day: Day?
+    var period: Int?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -34,5 +37,10 @@ class ClassView: UIView {
         classNameLabel.text = classModel.className
         teacherNameLabel.text = classModel.teacherName
         roomNameLabel.text = classModel.roomName
+    }
+    
+    func set(day: Day, period: Int) {
+        self.day = day
+        self.period = period
     }
 }

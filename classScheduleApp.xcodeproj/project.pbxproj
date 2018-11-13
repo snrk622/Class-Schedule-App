@@ -10,7 +10,8 @@
 		3C153DEC219ABB3A0081E201 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C153DEB219ABB3A0081E201 /* TabViewController.swift */; };
 		3C153DEE219ABE1B0081E201 /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C153DED219ABE1B0081E201 /* ClassView.swift */; };
 		3C153DF0219ABE300081E201 /* ClassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C153DEF219ABE300081E201 /* ClassView.xib */; };
-		3C153DF2219ABF810081E201 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C153DF1219ABF810081E201 /* Class.swift */; };
+		3C153DF2219ABF810081E201 /* ClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C153DF1219ABF810081E201 /* ClassModel.swift */; };
+		3C153DF4219AD5300081E201 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C153DF3219AD52F0081E201 /* Day.swift */; };
 		3CC359212192F8B70067A5AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC359202192F8B70067A5AB /* AppDelegate.swift */; };
 		3CC359232192F8B70067A5AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC359222192F8B70067A5AB /* ViewController.swift */; };
 		3CC359262192F8B70067A5AB /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC359242192F8B70067A5AB /* ViewController.storyboard */; };
@@ -22,7 +23,8 @@
 		3C153DEB219ABB3A0081E201 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		3C153DED219ABE1B0081E201 /* ClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassView.swift; sourceTree = "<group>"; };
 		3C153DEF219ABE300081E201 /* ClassView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassView.xib; sourceTree = "<group>"; };
-		3C153DF1219ABF810081E201 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		3C153DF1219ABF810081E201 /* ClassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModel.swift; sourceTree = "<group>"; };
+		3C153DF3219AD52F0081E201 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		3CC3591D2192F8B70067A5AB /* classScheduleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = classScheduleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC359202192F8B70067A5AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CC359222192F8B70067A5AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +73,8 @@
 				3C153DEB219ABB3A0081E201 /* TabViewController.swift */,
 				3C153DED219ABE1B0081E201 /* ClassView.swift */,
 				3C153DEF219ABE300081E201 /* ClassView.xib */,
-				3C153DF1219ABF810081E201 /* Class.swift */,
+				3C153DF1219ABF810081E201 /* ClassModel.swift */,
+				3C153DF3219AD52F0081E201 /* Day.swift */,
 			);
 			path = classScheduleApp;
 			sourceTree = "<group>";
@@ -150,8 +153,9 @@
 			files = (
 				3C153DEC219ABB3A0081E201 /* TabViewController.swift in Sources */,
 				3CC359232192F8B70067A5AB /* ViewController.swift in Sources */,
+				3C153DF4219AD5300081E201 /* Day.swift in Sources */,
 				3CC359212192F8B70067A5AB /* AppDelegate.swift in Sources */,
-				3C153DF2219ABF810081E201 /* Class.swift in Sources */,
+				3C153DF2219ABF810081E201 /* ClassModel.swift in Sources */,
 				3C153DEE219ABE1B0081E201 /* ClassView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,12 +303,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5449ZKMV4U;
 				INFOPLIST_FILE = classScheduleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.r.0622.s.classScheduleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoge.asdfasdf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,12 +322,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5449ZKMV4U;
 				INFOPLIST_FILE = classScheduleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.r.0622.s.classScheduleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoge.asdfasdf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
